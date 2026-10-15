@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Admission Form</title>
+</head>
+<body>
+    <h1>Apply now</h1>
+    <form action="/apply" method="post">
+        <div>
+            <label for="fullname">Full name</label><br>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone</label><br>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <br>
+        <div>
+            <label for="dob">Date of birth</label><br>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <br>
+        <div>
+            <label for="course">Course</label><br>
+            <select id="course" name="course">
+                <option>B.Sc. Computer Science</option>
+                <option>B.Sc. Mathematics</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="address">Address</label><br>
+            <textarea id="address" name="address"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>
+                <input type="checkbox" required> I confirm these details are correct
+            </label>
+        </div>
+        <br>
+        <button type="submit">Apply</button>
+    </form>
+</body>
+</html>
